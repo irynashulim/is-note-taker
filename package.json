@@ -9,6 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irynashulim/is-note-taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/irynashulim/is-note-taker/issues"
+  },
+  "homepage": "https://github.com/irynashulim/is-note-taker#readme"
 }
