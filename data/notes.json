@@ -1,5 +1,32 @@
 {
-    "notesArray": [
-        
-    ]
+  "notes": [
+    {
+      "myName": "Ira",
+      "id": "0"
+    },
+    {
+      "myName": "Ira",
+      "id": "1"
+    },
+    {
+      "title": "gmjcgh",
+      "text": "bmcghm",
+      "id": "2"
+    },
+    {
+      "title": "hj,vjk",
+      "text": "mnjk.jk.",
+      "id": "3"
+    },
+    {
+      "title": "jh,vj,",
+      "text": "nm, vj, ",
+      "id": "4"
+    },
+    {
+      "title": "ui.lhio",
+      "text": "jk.gjk..",
+      "id": "5"
+    }
+  ]
 }
