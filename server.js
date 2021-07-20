@@ -1,13 +1,22 @@
 const fs = require('fs');
-const path = require('path');
-const express = require('express');
-const { notes } = require('./data/notes');
 
-const PORT = process.env.PORT || 3001;
+const express = require('express');
 const app = express();
+const apiRoutes = require('./routes/apiRoutes')
+const htmlRoutes = require('./routes/htmlRoutes')
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
+
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
+
+
+
+const PORT = process.env.PORT || 3001;
+
+const { notes } = require('./data/notes');
 
 function createNewNote(body, notesArray) {
     const note = body;
@@ -31,13 +40,7 @@ app.get('/api/notes', (req, res) => {
     res.json(results);
   });
 
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
-  });
 
-  app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/notes.html'));
-  });
 
  app.post('/api/notes', (req, res) => {
     req.body.id = notes.length.toString();
