@@ -20,10 +20,10 @@ function createNewNote(body, notesArray) {
   }
 
 
-  function findById(id, notesArray) {
-      const result = notesArray.filter(note => note.id === id)[0];
-      return result;
-  }
+  // function findById(id, notesArray) {
+  //     const result = notesArray.filter(note => note.id === id)[0];
+  //     return result;
+  // }
 
 app.get('/api/notes', (req, res) => {
     let results = notes;
@@ -45,12 +45,12 @@ app.get('/api/notes', (req, res) => {
   res.json(req.note);
 });
 
-app.delete('/api/notes/:id', (req, res) => {
-    const result = notes;
+// app.delete('/api/notes/:id', (req, res) => {
+//     const result = notes;
     
 
-    res.send('DELETE Request');
-})
+//     res.send('DELETE Request');
+// })
 
   app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
