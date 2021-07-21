@@ -2,7 +2,7 @@
 ##  Description
  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
  ---
- Note taker app allows you symply type in in and save your notes.
+ Note taker app allows you symply type in and save your notes.
  
  **Built with:**
     JavaScript, CSS, Node, Express.js.
